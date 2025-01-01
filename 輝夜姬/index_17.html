@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index_1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="17.jpg" alt="#">
+        </div>
+        <div class="code-editor">
+            <div class="text-animation-1">
+                <span class="code" >輝夜姬穿上那件羽衣，向老夫婦以及那些愛她的人告別，並表達了感謝之情。</span>
+            </div>
+            <div class="butt">
+                <a href="index_18.html"><button id="btn">NEXT</button></a>
+            </div>
+        </div>
+        <audio id="myAudio">
+            <source src="17.mp3" type="audio/mpeg">
+        </audio>
+</body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let audio = document.getElementById('myAudio');
+            // 當使用者與頁面互動時播放
+            document.addEventListener('click', function() {
+                audio.play();
+            }, { once: true });
+        });
+    </script>
+</html>

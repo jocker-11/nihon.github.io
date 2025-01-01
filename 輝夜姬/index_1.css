@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Fira Code" ,sans-serif;
+}
+:root{
+    --bg-programming:#000000;
+    --secound-bg-programming:lightgray;
+    --texr-color:#fff;
+    --main-color:#88c999;
+}
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+body{
+    background: var(--bg-programming);
+    color: var(--texr-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.image{
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    padding: 5%;
+    border-radius: 20px;
+}
+.code-editor {
+    /* background-color: #1e1e1e; */
+    border: 1px solid #333;
+    padding: 30px;
+    width: fit-content;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    border: 5px solid transparent;
+    /* box-shadow: 0 0 20px rgba(136, 201, 153, 0.5);  */
+    margin-left: 30%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+.text-animation-1, .text-animation-2
+,.text-animation-3, .text-animation-4 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #88c999; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 2s steps(20, end) 5,
+      blink-caret .75s step-end infinite;
+    
+  }
+  .butt{
+    text-align: center;
+    margin-top: 100px;
+  }
+  button {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff80;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
+  }
+  
+  #btn:hover,
+  :focus {
+    color: #ffffff;
+    background: gray;
+    border: 1px solid gray;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px gray, 0 0 20px gray, 0 0 50px gray,
+      0 0 100px gray;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #88c999; }
+  }

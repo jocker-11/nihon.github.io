@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index_1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="13.jpg" alt="#">
+        </div>
+        <div class="code-editor">
+            <div class="text-animation-1">
+                <span class="code" >老夫婦聽到這番話後，心如刀割，但他們無力改變事實，只能準備接受分別。</span>
+            </div>
+            <div class="butt">
+                <a href="index_14.html"><button id="btn">NEXT</button></a>
+            </div>
+        </div>
+        <audio id="myAudio">
+            <source src="13.mp3" type="audio/mpeg">
+        </audio>
+</body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let audio = document.getElementById('myAudio');
+            // 當使用者與頁面互動時播放
+            document.addEventListener('click', function() {
+                audio.play();
+            }, { once: true });
+        });
+    </script>
+</html>
